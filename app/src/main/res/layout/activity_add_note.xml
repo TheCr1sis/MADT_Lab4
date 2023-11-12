@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@color/purple"
+        android:text="@string/my_notes"
+        android:textColor="@color/white"
+        android:paddingLeft="160dp"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextNoteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="37dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginLeft="28dp"
+        android:padding="16dp"
+        android:hint="@string/note_title"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextNoteContent"
+        android:layout_width="383dp"
+        android:layout_height="154dp"
+        android:layout_below="@id/editTextNoteTitle"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginLeft="28dp"
+        android:hint="@string/note_content"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/btnSaveNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNoteContent"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/save_note" />
+
+</RelativeLayout>
